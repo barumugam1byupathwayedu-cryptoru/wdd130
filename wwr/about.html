@@ -16,15 +16,17 @@
 
 <body>
     <header>
+        <a class="logo" href="index.html"></a>
         <img
           src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-raftingbw.png"
           alt="Rafting logo" width="150">
 
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="index.html">Home</a><br>
             <a href="about.html">About Us</a><br>
             <a href="trips.html">Trips</a><br>
             <a href="contact.html">Contact Us</a><br>
+
         </nav>
     </header>
 
@@ -51,24 +53,49 @@
         </div>
 
         <section>
-            <h2>History</h2>
+            <h2 style="text-align: center;">History</h2>
 
-            <p>
-                River Rafting began with a small group of enthusiasts<br>
-                who wanted to share their love adventure.<br>
-                Over the years, our team has grown along side our foundation for safety.<br>
-                Our main aim is to share fun experiences just as we did as enthusiasts.<br>
-            </p>
+            <div class="history-layout">
+                <p class="history-text">
+                    River Rafting began with a small group of enthusiasts
+                    who wanted to share their love of adventure.
+                </p>
+
+                <div class="history-photo">
+                    <img
+                      src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting16_1024.jpg"
+                      alt="River rafting team">
+                </div>
+
+                <p class="history-text">
+                    Over the years, our team has grown alongside our foundation for safety.
+                    Our main aim is to share fun experiences just as we did as enthusiasts.
+                </p>
+            </div>
         </section>
-
-        <section>
-            <h2>History</h2>
-            <p>
-                River Rafting began in 2018.<br>
-                Four close friends came together with a shared passion for adventure and nature.<br>
-                What started as a ladies trip has grown into a trusted rafting company.<br>
-            </p>
-            <h2>Adventure Awaits You!</h2>
+        <section class="adventures">
+            <h2 style="text-align: center;">Adventure Awaits You!</h2>
+            <figure>
+                <img src="images/Los Dientes del Diablo.png"
+                  alt="Rafting through a steep river rapid">
+                <figcaption>Los Dientes del Diablo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Big Mallard.png" alt="A raft riding over a large wave">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Half Day Adventure.png" alt="Rafters enjoying a half-day trip">
+                <figcaption>Half Day Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Rapid Run.png" alt="A raft entering a whitewater rapid">
+                <figcaption>Rapid Run</figcaption>
+            </figure>
+            <figure>
+                <img src="images/River Rush.png" alt="A group rafting together on the river">
+                <figcaption>River Rush</figcaption>
+            </figure>
         </section>
     </main>
 
