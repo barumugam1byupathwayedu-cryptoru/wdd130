@@ -1,0 +1,316 @@
+/* Contact page layout */
+
+.contact-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 14px;
+}
+
+.contact-page > h1 {
+    display: none;
+}
+
+/* Company information */
+
+.company-info {
+    text-align: center;
+    margin: 10px 0 14px;
+}
+
+.company-info h2 {
+    margin: 0 0 2px;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.company-info address {
+    font-size: 0.85rem;
+    line-height: 1.45;
+    font-style: normal;
+}
+
+/* Map and form side by side */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    height: 247px;
+    border: 1px solid #ccc;
+}
+
+body {
+    background-color: palevioletred;
+}
+
+/* Contact form */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.8rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 7px;
+    align-items: center;
+}
+
+.form-row label {
+    text-align: left;
+}
+
+.form-row input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 26px;
+    padding: 4px 7px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.purpose-field {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 5px 7px;
+    align-items: center;
+    margin: 0;
+    padding: 4px 0;
+    border: 0;
+}
+
+.purpose-field legend {
+    float: left;
+    width: 60px;
+    padding: 0;
+    line-height: 1.3;
+}
+
+.purpose-field label {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.purpose-field input {
+    margin: 0;
+    accent-color: #183b4e;
+}
+
+.message-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.message-field textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 49px;
+    padding: 6px;
+    resize: vertical;
+    border: 1px solid #888;
+    border-radius: 3px;
+    font: inherit;
+}
+
+.newsletter-field {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 2px 0;
+}
+
+.newsletter-field input {
+    margin: 0;
+    accent-color: #183b4e;
+}
+
+.newsletter-field label {
+    line-height: 1.3;
+}
+
+.contact-form button {
+    width: 100%;
+    min-height: 26px;
+    padding: 4px 10px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    background-color: #eee;
+    color: #111;
+    font: inherit;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ddd;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible,
+.contact-form button:focus-visible {
+    outline: 2px solid #174a63;
+    outline-offset: 2px;
+}
+
+/* Employee profiles */
+
+.employee-section {
+    border: 1px solid #777;
+    background-color: pink;
+    margin: 0 0 6px;
+    padding: 6px 14px 10px;
+    text-align: center;
+}
+
+.employee-section h2 {
+    margin: 0 0 3px;
+    font-size: 1.2rem;
+}
+
+.employee-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 20px;
+}
+
+.employee-list figure {
+    width: 120px;
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+.employee-list img {
+    display: block;
+    width: 80px;
+    height: 67px;
+    object-fit: cover;
+    margin: 0 auto 3px;
+    background-color: #ddd;
+}
+
+.employee-list figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+/* Header and footer */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 12px 20px;
+    background-color: pink;
+    border: 1px solid black;
+}
+
+header .logo img {
+    display: block;
+    width: 90px;
+    height: 80px;
+    object-fit: contain;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    min-width: 85px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    background-color: palevioletred;
+    color: #111;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+header nav a + a {
+    border-left: 0;
+}
+
+header nav a:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+header nav a:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 20px;
+    margin: 6px 14px 14px;
+    border: 1px solid black;
+    background-color: pink;
+    font-size: 0.8rem;
+}
+
+footer p {
+    flex: 1;
+    text-align: center;
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 8px;
+}
+
+footer .socialmedia img {
+    display: block;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* Responsive layout */
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    header nav a {
+        min-width: auto;
+        padding: 8px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .employee-list {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
