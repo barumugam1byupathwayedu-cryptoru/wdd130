@@ -130,9 +130,9 @@ section h2 {
     left: 0;
     width: 100%;
     padding: 16px;
-    background-color: rgba(31, 41, 51, 0.88);
-    color: var(--white-color);
     text-align: center;
+    background-color: rgba(31, 41, 51, 0.92);
+    color: #ffffff;
 }
 
 .hero article {
