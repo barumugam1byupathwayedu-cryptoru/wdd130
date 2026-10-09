@@ -1,0 +1,100 @@
+/* styles/quiz.css */
+
+:root {
+    --bg: black;
+    --card: pink;
+    --text: #e5e7eb;
+    --muted: #a7b0c0;
+    --accent: grey;
+    --accent2: pink;
+    --border: rgba(255, 255, 255, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: radial-gradient(1200px 600px at 20% 0%, #ff4da6 0%, transparent 60%), #2a0b1a;
+    color: var(--text);
+    line-height: 1.4;
+}
+
+.page {
+    max-width: 720px;
+    margin: 48px auto;
+    padding: 0 16px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    letter-spacing: 0.3px;
+}
+
+.quiz-form {
+    background: #ff69b4;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    /* single column layout */
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+label {
+    color: var(--text);
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    /* uniform width */
+    padding: 12px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: pink;
+    color: var(--text);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: rgba(96, 165, 250, 0.75);
+    box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.18);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px 14px;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ff1493, #ff69b4);
+    color: #06212e;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-btn:hover {
+    filter: brightness(1.05);
+}
+
+.submit-btn:active {
+    transform: translateY(1px);

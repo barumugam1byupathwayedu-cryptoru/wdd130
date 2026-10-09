@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css" />
+</head>
+
+<body>
+    <main class="page">
+        <h1>HTML & CSS Online Quiz</h1>
+
+        <form class="quiz-form" action="#" method="post">
+            <!-- Q1: text input -->
+            <div class="field">
+                <label for="q1">1) Fill in the blank: The HTML “_____” element holds metadata like
+                    title and links to CSS.</label>
+                <input type="text" id="q1" name="q1" required />
+            </div>
+
+            <!-- Q2: textarea -->
+            <div class="field">
+                <label for="q2">2) Short answer: What does the CSS property <strong>color</strong>
+                    control?</label>
+                <textarea id="q2" name="q2" rows="4" required></textarea>
+            </div>
+
+            <!-- Q3: select dropdown -->
+            <div class="field">
+                <label for="q3">3) Which HTML element is commonly used to create a
+                    hyperlink?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="a">a</option>
+                    <option value="link">link</option>
+                    <option value="href">href</option>
+                </select>
+            </div>
+
+            <!-- Q4: number input -->
+            <div class="field">
+                <label for="q4">4) Integer answer: In HTML, how many sides does a triangle have?
+                    (Enter a number)</label>
+                <input type="number" id="q4" name="q4" required />
+            </div>
+
+            <button class="submit-btn" type="submit">Submit Quiz</button>
+        </form>
+    </main>
+</body>
+
+</html>
